@@ -15,13 +15,13 @@ def getHealthCheckPort(serviceName) {
         'api-gateway': 8080,
         'service-discovery': 8761,
         'cloud-config': 9296,
-        'user-service': 8080,
-        'product-service': 8080,
-        'order-service': 8080,
-        'payment-service': 8080,
-        'shipping-service': 8080,
-        'favourite-service': 8080,
+        'user-service': 8700,
+        'product-service': 8500,
+        'order-service': 8300,
+        'payment-service': 8400,
+        'shipping-service': 8600,
+        'favourite-service': 8800,
         'proxy-client': 8900
     ]
-    return ports[serviceName] ?: 8080
+    return ports[serviceName] ?: 8700
 }
